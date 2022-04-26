@@ -5,8 +5,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController
 {
-    public function index()
+    public function index($name)
     {
-        return new Response('Hello World!');
+        return new Response("Hello $name");
     }
 }
